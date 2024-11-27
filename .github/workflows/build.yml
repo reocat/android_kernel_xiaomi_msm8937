@@ -33,6 +33,10 @@ jobs:
 
     - name: Install dependencies
       run: |
+	sudo systemctl disable snapd.service
+	sudo systemctl disable snapd.socket
+	sudo systemctl disable snapd.seeded.service
+	sudo apt remove snapd
         sudo apt-get update -y 
         sudo apt-get upgrade -y 
         sudo apt install gcc-aarch64-linux-gnu -y
