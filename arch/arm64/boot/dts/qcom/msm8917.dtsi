@@ -1811,7 +1811,7 @@
 			#size-cells = <0>;
 
 			qcom,speed-bin = <0>;
-			qcom,initial-pwrlevel = <3>;
+			qcom,initial-pwrlevel = <1>;
 
 			/* TURBO */
 			qcom,gpu-pwrlevel@0 {
